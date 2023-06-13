@@ -1,0 +1,190 @@
+
+  
+body::-webkit-scrollbar{
+  width: 7px;
+  background: #BAD9BC;
+}
+body::-webkit-scrollbar-thumb{
+  background: #67B26F;
+  border-radius: 20px;
+}
+body{
+  margin: 0;
+  padding: 0;
+
+}
+                                                                                           /* HEADER */
+
+nav > a{
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: 300;
+  color: aliceblue;
+
+}
+nav a:hover{
+  text-decoration: underline;
+}
+
+header{
+  width: 100%;
+  height: 600px;
+  background: #67b26f;
+   /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, hsl(200, 56%, 55%), #67B26F);
+/* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(200, 56%, 55%, 0.527), #67b26f70), url(/IMG/Fondo-modified.jfif
+);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.filtro {
+  display: none;
+}
+
+.buscador{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  color: aliceblue;
+}
+.input-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.buscador input{
+  font-family: 'Lato', sans-serif;
+  display: block;
+  width: 800px;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 15px 30px;
+  background-color: #bad9bc;
+  border: 10px solid aliceblue;
+  box-decoration-break: none;
+  width: 100%;
+  color: aliceblue;
+  
+}
+.buscador input::placeholder{
+  color: aliceblue;
+}
+.buscador input:focus {
+  outline: none;
+  color: aliceblue;
+}
+h1{
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.libros-buscar {
+  margin: 10px;
+  text-align: center;  
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+.libros-buscar img {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border-radius: 40px;
+}
+.libro-buscar {
+  width: 90%;
+  align-items: center;
+  height: auto;
+}
+
+.libro-img {
+  width: 100%;
+  height: auto;
+}
+.libro-imagen {
+  width: 200px;
+  height: 300px;
+}
+
+
+    /* Estilos para el modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: opacity 0.3s ease;
+    }
+
+    .modal.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-content {
+      border-radius: 30px;
+        background-color: #fff;
+        padding: 20px;
+        max-width: 600px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        animation: modalFadeIn 0.3s ease;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        max-height: 600px;
+    }
+    h2{
+      font-size: 30px;
+    }
+    p{
+      font-size: 20px;
+      color: #7e7e7e;
+    }
+
+    @keyframes modalFadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .categorias{
+      margin: 70px;
+      display: block;
+      align-items: center;
+    }
+    .categoria{
+      background: #bad9bc;
+      border:2px solid #fff;
+      border-radius: 6px;
+      padding: 7px;
+      margin: 7px;
+      color: #fff;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    .categoria:hover{
+      background: #9cb49d;
+    }

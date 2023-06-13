@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roedores Literarios</title>
+    <!-- LINKS -->
+    <link rel="stylesheet" href="/Css/Styles.css">
+    <link rel="stylesheet" href="/Css/buscar.css">
+    <link rel="shortcut icon" href="/IMG/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav style="text-align: right;padding: 30px 50px 0 0;">
+            <a href="/Html/index.html">Inicio</a>
+            <a href="/Html/Pages/buscar.html">Buscar</a>
+            <a href="/Html/Pages/contactos.html">Contactos</a>
+            <a href="/Html/Pages/nosotros.html">Nosotros</a>
+        </nav>
+        <div class="wave" style="height: 150px; overflow: hidden;position: absolute;bottom: 0;width: 100%;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M-96.84,-53.83 C251.92,195.17 271.67,200.08 617.60,-92.22 L631.15,403.82 L-74.26,323.11 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path>
+            </svg>
+        </div> 
+         <section class="buscar">
+            <h1>¡Hora de buscar!</h1>
+            <div class="buscador">
+                <input type="text" name="buscador" id="buscador" placeholder="Buscar por título...">
+                <button class="categoria" data-categoria="">Reiniciar</button>
+                <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="categorias">
+                <button class="categoria" data-categoria="romance">Romance</button>
+                <button class="categoria" data-categoria="comedia">Comedia</button>
+                <button class="categoria" data-categoria="terror">Terror</button>
+                <button class="categoria" data-categoria="ciencia ficción">Ciencia Ficción</button>
+                <button class="categoria" data-categoria="aventura">Aventura</button>
+                <button class="categoria" data-categoria="fantasía">Fantasía</button>
+                <button class="categoria" data-categoria="drama">Drama</button>
+                <button class="categoria" data-categoria="histórico">Histórico</button>
+                <button class="categoria" data-categoria="distopía">Distopía</button>
+                <button class="categoria" data-categoria="ficción histórica">Ficción Histórica</button>
+                <button class="categoria" data-categoria="policíaco">Policíaco</button>
+                <button class="categoria" data-categoria="novela histórica">Novela Histórica</button>
+                <button class="categoria" data-categoria="fantasía épica">Fantasía Épica</button>
+                <button class="categoria" data-categoria="novela literaria">Novela Literaria</button>
+                <button class="categoria" data-categoria="literatura juvenil">Literatura Juvenil</button>
+                <button class="categoria" data-categoria="cuento literario">Cuento Literario</button>
+                <button class="categoria" data-categoria="mitología">Mitología</button>
+                
+             
+              </div>
+              
+    </section>
+    </header>
+
+    <!-- BUSCAR -->
+  
+
+    <div class="libros">
+        <div class="libros-buscar" id="listaArticulos">
+            <div class="libro-buscar">
+                <img class="libro-imagen" src="/IMG/Libros/La cancion del lobo.jpg" alt=" cuento literario, ficción, romance">
+                <div class="modal" id="modal1">
+                    <div class="modal-content">
+                        <h2>La canción del lobo</h2>
+                        <p style="font-style: italic;">"La canción del lobo es una hermosa y conmovedora historia que toca el corazón de sus lectores. A través de una prosa lírica y emotiva, el autor nos sumerge en un viaje lleno de aventuras y descubrimientos. La relación entre el lobo y su entorno se desarrolla de manera cautivadora, revelando una profunda conexión entre la naturaleza y la humanidad. Con una mezcla de realismo y elementos fantásticos, este cuento transmite un mensaje poderoso sobre el equilibrio entre el hombre y la naturaleza, invitándonos a reflexionar sobre nuestra relación con el mundo que nos rodea. Una lectura que dejará una huella duradera en el corazón y en la mente."</p>
+                         <p>Tomas Quinteros</p>
+                     </div>
+                </div>
+            </div>
+            <div class="libro-buscar">
+                <img class="libro-imagen" src="/IMG/Libros/Un cuento perfecto.jpg" alt=" cuento literario, ficción">
+                <div class="modal" id="modal2">
+                    <div class="modal-content">
+                        <h2>Un cuento perfecto</h2>
+                        <p style="font-style: italic;">"Un cuento perfecto es una joya literaria que te atrapará desde la primera página. Escrito por un autor talentoso, este cuento teje una trama cautivadora llena de giros sorprendentes y personajes memorables. Con una prosa elegante y una habilidad para crear atmósferas envolventes, este relato te transportará a un mundo de imaginación y te dejará reflexionando sobre la naturaleza de la realidad y los límites de la ficción. Una lectura imprescindible para los amantes de los cuentos bien construidos y con un toque de intriga."</p>
+                        <p>Milagros Bravo</p>
+                     </div>
+                </div>
+            </div>
+            <div class="libro-buscar">
+                <img class="libro-imagen" src="/IMG/Libros/Cien años de soledad.jpg" alt=" realista , mágico">
+                <div class="modal" id="modal3">
+                    <div class="modal-content">
+                        <h2>Cien años de soledad</h2>
+                        <p style="font-style: italic;">"Cien años de soledad es una obra maestra de Gabriel García Márquez que te sumerge en un mundo mágico y fascinante. A través de la historia de la familia Buendía y su pueblo, Macondo, García Márquez explora temas universales como el amor, la soledad y el poder. Con su estilo narrativo único y lleno de imágenes evocadoras, esta novela te transportará a un mundo lleno de maravillas y te dejará reflexionando sobre la condición humana. Una lectura imprescindible para los amantes de la literatura."</p>
+                        <p style="padding-top:20px;">Gabriel García</p>
+                    </div>
+                </div>
+            </div>
+             <div class="libro-buscar">
+                <img class="libro-imagen" src="/IMG/Libros/Percy Jackson y el ladron del rayo.jfif" alt="literatura juvenil, fantasía, mitología">
+                <div class="modal" id="modal4">
+                    <div class="modal-content">
+                        <h2>Percy Jackson y el ladrón del rayo</h2>
+                        <p style="font-style: italic;">"Percy Jackson y el ladrón del rayo es el inicio de una emocionante serie de libros escrita por Rick Riordan. En esta historia, seguimos a Percy Jackson, un chico de doce años que descubre ser un semidiós y se embarca en una misión para evitar una guerra entre los dioses griegos. Con una mezcla de mitología, acción y personajes entrañables, esta novela juvenil cautiva a lectores de todas las edades, convirtiéndose en un clásico moderno de la literatura fantástica."</p>
+                         <p>Juliana Abril Más</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer2">
+         <img style="width: 5%; height: 5%;" src="/IMG/favicon.png" alt="">
+          <p style="margin: 0;">Diseñado por Abril Gomez -&copy;2023</p>
+        </div>
+     </footer>
+    <!-- SCRIPTS -->
+    <script src="/JS/script.js"></script>
+    <script src="/JS/buscar.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+  
+body::-webkit-scrollbar{
+  width: 7px;
+  background: #BAD9BC;
+}
+body::-webkit-scrollbar-thumb{
+  background: #67B26F;
+  border-radius: 20px;
+}
+body{
+  margin: 0;
+  padding: 0;
+
+}
+                                                                                           /* HEADER */
+
+nav > a{
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: 300;
+  color: aliceblue;
+
+}
+nav a:hover{
+  text-decoration: underline;
+}
+
+header{
+  width: 100%;
+  height: 600px;
+  background: #67b26f;
+   /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, hsl(200, 56%, 55%), #67B26F);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(200, 56%, 55%, 0.527), #67b26f70), url(/IMG/Fondo-modified.jfif
+);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+position: relative;
+background-size: cover;
+background-attachment: fixed;
+}
+.textos-header a{
+  font-family: 'Lato', sans-serif;
+  display: block;
+  width: 50px;
+  font-weight: 700;
+  background-color: #96c3b2;
+  border-radius: 10px;
+  padding: 15px 30px;
+  margin: 0px;
+  color: #fff;
+  text-decoration: none;
+
+}
+.textos-header a:hover{
+  background-color: transparent;
+  border: 2px snow #96c3b2;
+  color: aliceblue;
+}
+
+.contenedor-contacto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  
+}
+
+
+.contenedor-modos, .contenedor-formulario{
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  border: 3px solid #fff;
+  box-shadow:inset 0 0 50px #fff;
+  backdrop-filter: blur(5px);
+  width: 500px;
+  height: 400px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 10px;
+  background: #ffffff2e;
+  z-index: 333;
+}
+.contenedor-contacto img{
+  width: 20%;
+
+}
+input{
+  align-items:center;
+  display: block;
+}
+
+::placeholder{
+  color: #fff;
+}
+input, textarea:focus{
+  outline: none;
+}
+
+textarea::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10PX;
+  background:transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 20px;
+  border: 3px solid #FFF;
+}
+
+form{
+display: inline-block;
+padding: 0px;
+}
+h1,h2{
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+input, .textarea{
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 5px 7px;
+  margin-bottom: 10px;
+}
+textarea{
+  resize: none;
+  background: transparent;
+  border: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+.btn:hover{
+  background: #ffffff33;
+  
+}
+/* FOOTER */
+footer{
+  margin: 0px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  
+}
+footer p{  
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #fff;
+  font-size: 30px; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer2{
+  align-items: center;
+  display: inline-flex;
+  border-top-left-radius:160px ;
+  border-top-right-radius:160px;
+  background: #615f5a;
+  width: 100%;
+  justify-content: center;
+  margin-top: 100px;
+}
+/* Estilo del modal */
+#modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  text-align: center;
+}
+
+#modal-content {
+  color:#BAD9BC ;
+  font-size: 35px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: inline-block;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20%;
+}
