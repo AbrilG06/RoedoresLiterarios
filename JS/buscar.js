@@ -25,12 +25,19 @@ document.addEventListener("keyup", e => {
     const modal2 = document.getElementById('modal2');
     const modal3 = document.getElementById('modal3');
     const modal4 = document.getElementById('modal4');
+    const modal5 = document.getElementById('modal5');
+    const modal6 = document.getElementById('modal6');
+    const modal7 = document.getElementById('modal7');
+
 
     // Obtener referencia a las imágenes de los libros
     const libroImg1 = document.querySelector('.libro-buscar:nth-child(1) .libro-imagen');
     const libroImg2 = document.querySelector('.libro-buscar:nth-child(2) .libro-imagen');
     const libroImg3 = document.querySelector('.libro-buscar:nth-child(3) .libro-imagen');
     const libroImg4 = document.querySelector('.libro-buscar:nth-child(4) .libro-imagen');
+    const libroImg5 = document.querySelector('.libro-buscar:nth-child(5) .libro-imagen');
+    const libroImg6 = document.querySelector('.libro-buscar:nth-child(6) .libro-imagen');
+    const libroImg7 = document.querySelector('.libro-buscar:nth-child(7) .libro-imagen');
 
     // Agregar evento de clic a las imágenes
     libroImg1.addEventListener('click', () => {
@@ -51,6 +58,21 @@ document.addEventListener("keyup", e => {
       // Mostrar el modal al hacer clic en la imagen
       modal4.classList.add('active');
   });
+  
+    libroImg5.addEventListener('click', () => {
+      // Mostrar el modal al hacer clic en la imagen
+      modal5.classList.add('active');
+  });
+    libroImg6.addEventListener('click', () => {
+    // Mostrar el modal al hacer clic en la imagen
+      modal6.classList.add('active');
+  });
+   libroImg7.addEventListener('click', () => {
+    // Mostrar el modal al hacer clic en la imagen
+      modal7.classList.add('active');
+  });
+
+
 
 
     // Agregar evento de clic fuera del modal para cerrarlo
@@ -67,8 +89,20 @@ document.addEventListener("keyup", e => {
             modal3.classList.remove('active');
         }
         if (event.target === modal4) {
-          modal4.classList.remove('active');
-      }
+           modal4.classList.remove('active');
+          
+        }
+        if (event.target === modal5) {
+           modal5.classList.remove('active');
+        }
+        if (event.target === modal6) {
+           modal6.classList.remove('active');
+      
+        }
+        if (event.target === modal7) {
+           modal7.classList.remove('active');
+    
+        }
     });
                                                                                                            // FILTRADO POR CATEGORIAS
 // Obtén referencia a los botones de categoría y al campo de búsqueda
